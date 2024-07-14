@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+}
+.section {
+    position: relative;
+}
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: black;
+    background: linear-gradient(to right, #ffa48e, #7e86e0);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s ease;
+}
+button img {
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+    height: 14px;
+}
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*  Section 1  */
+
+.rev-test h2 {
+    font-size: 55px;
+    color: whitesmoke;
+    font-weight: 200;
+    text-align: left;
+}
+.rev-test h4 {
+    color: #c4c4c4;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.rev-test p {
+    font-size: 16px;
+    margin: 30px 0 20px;
+    color: #c4c4c4;
+}
+.rev-test .red {
+    color: #ffa48e;
+    font-weight: bold;
+}
+.rev-test .blue {
+    font-weight: bold;
+}
+.rev-test {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.rt-content {
+    font-weight: 200;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 20px 20px;
+    margin-left: 40px;
+}
+.rt-image {
+    background-image: url(/LHimages/wht-ptn-security-cam.jpg);
+    background-color: #1e1e1e;
+    background-position: center;
+    width:100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-100px);
+}
+.rt-image {
+    box-shadow: 10px 10px 25px black;
+}
+
+
+
+
+
+
+/*.col:hover {
+    transform: scale(1.1);
+    
+    box-shadow: 5px 5px 10px black;
+    transition: 0.3s ease;
+}
+.bottomRow:hover {
+    transform: scale(1.1);
+    
+    box-shadow: 5px 5px 10px #1e1e1e;
+    transition: 0.3s ease;
+}*/
+
+

@@ -1,0 +1,639 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    
+}
+body , html {
+    overflow-x: hidden;
+    background-color: #121212;
+    line-height: 1.3;
+    margin-top: -10px;
+}
+.underline {
+    text-decoration: underline 2px solid #ffa48e;
+}
+.container {
+    margin-top: 1px;
+    width: 100%;
+    height: 100vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    background-image: url(LHimages/grey-by-stairs-trimmed.png);
+    background-color: #121212;
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 10px;
+    color: whitesmoke;
+}
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+.menuList-button {
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: black;
+    background: linear-gradient(to right, #ffa48e, #7e86e0);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.menuList-button:hover {
+    display:inline-block;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 400;
+}
+nav ul li a:hover {
+    color: #ffa48e;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+.col-1 {
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 40px 30px;
+    line-height: normal;
+    flex-basis: 35%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2 {
+    font-size: 55px;
+    color: whitesmoke;
+    font-weight: 200;
+}
+.col-1 h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 100;
+    margin: 2px 0 10px;
+}
+.col-1 p {
+    font-size: 16px;
+    color: #c4c4c4;
+    font-weight: 100;
+    margin: 30px 0 20px;
+}
+.col-1 h4 {
+    margin: 30px 0;
+    font-size: 20px;
+    color: whitesmoke;
+}
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: black;
+    background: linear-gradient(to right, #ffa48e, #7e86e0);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s ease;
+}
+button img {
+    width: 30px;
+    display: none;
+}
+button:hover img{
+    display: block;
+    height: 14px;
+}
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*.col-1::after {
+    content: '';
+    width: 10px;
+    height: 50%;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+    background: #7e86e0;
+}*/
+.col-2 {
+    position: relative;
+    flex-basis: 65%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .nvexa_banner {
+    width: 100%;
+    position: relative;
+    align-items: left;
+    z-index: 1;
+    border-radius: 45px;
+}
+.col-2 .nvexa_banner img {
+    width: 180%;
+    height: 180%;
+}
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, #ffa48e, #7e86e0);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: 0;
+    transform: translateX(150px);
+}
+
+
+/*  Section 1  */
+section {
+    width: 95%;
+    margin: 40px auto;
+}
+.nvexaUse {
+    text-align: center;
+    color: whitesmoke;
+    width: 95%;
+}
+.nvexaUse .row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.nvexaUse .topRow {
+    display: flex;
+    flex-direction: row;
+}
+.nvexaUse .bottomRow {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin: 20px 20px;
+    border: 1px solid #383838;
+    box-shadow: 3px 3px 15px black;
+}
+.bottomRow .cola {
+    font-size: 16px;
+    color: #c4c4c4;
+    text-align: center;
+    position: relative;
+    width: 50%;
+}
+.nvexaUse .colOne {
+    margin-bottom: 0px;
+    padding: 20px 30px;
+}
+.nvexaUse .colTwo {
+    background-image: url(LHimages/btc-blk-crystal-30pct.png);
+    background-color: #1e1e1e;
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.nvexaUse .row .col {
+    max-width: 90%;
+    margin: 30px 20px 20px;
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid #383838;
+    box-shadow: 3px 3px 15px black;
+}
+.nvexaUse .col-icon {
+    align-items: center;
+    max-width: 120px;
+    max-height: 120px;
+    margin: 30px;
+}
+.nvexaUse .iconSheild {
+    align-items: center;
+    max-width: 140px;
+    max-height: 140px;
+    margin: 30px;
+}
+.nvexaUse h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 200;
+    color: whitesmoke;
+}
+.nvexaUse h2 {
+    font-size: 55px;
+    font-weight: 200;
+}
+.nvexaUse .title p {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #c4c4c4;
+    text-align: center;
+}
+.nvexaUse .span {
+    color: #ffa48e;
+    font-weight: bold;
+}
+.nvexaUse .row p {
+    color: #c4c4c4;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+
+/*  Section 2  */
+.bannerSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url(LHimages/nvexaBanner\(dark\).png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.bannerSection-content {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.bannerSection h1 {
+    font-size: 55px;
+    color: whitesmoke;
+    font-weight: 200;
+}
+.bannerSection p{
+    font-size: 16px;
+    margin: 20px 0 50px;
+    width: 65%;
+    color: #c4c4c4;
+}
+
+/*  Section 3  original 
+.revTest {
+    text-align: center;
+    color: whitesmoke;
+}
+.revTest .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.revTest .row .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.revTest .row img {
+    max-width: 300px;
+}
+.revTest-solve {
+    align-items: center;
+}
+.revTest h2 {
+    font-size: 55px;
+    font-weight: 200;
+}
+.revTest p {
+    font-size: 16px;
+    /*margin: 30px 0 20px;
+    color: #c4c4c4;
+    text-align: center;
+}
+.revTest h4 {
+    font-size: 20px;
+    color: #c4c4c4;
+    text-align: center;
+    margin-bottom: 30px;
+}
+*/
+
+/*  Section 3.01  */
+.takeCharge{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 95%;
+}
+.rev-test h2 {
+    font-size: 55px;
+    color: whitesmoke;
+    font-weight: 200;
+    text-align: left;
+}
+.rev-test h4 {
+    color: #c4c4c4;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.rev-test p {
+    font-size: 16px;
+    margin: 30px 0 20px;
+    color: #c4c4c4;
+    padding-right: 50px;
+}
+.rev-test .red {
+    color: #ffa48e;
+    font-weight: bold;
+}
+.rev-test .blue {
+    font-weight: bold;
+}
+.rev-test {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.rt-content {
+    font-weight: 200;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 20px 20px;
+    margin-left: 40px;
+}
+.rt-image {
+    background-image: url(LHimages/wht-ptn-security-cam.jpg);
+    background-color: #1e1e1e;
+    background-position: center;
+    width:100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rt-image {
+    box-shadow: 0 0 40px black;
+}
+
+/*  Section 4  */
+.overpay {
+    height: 80vh;
+}
+.overpay h2 {
+    color: whitesmoke;
+    font-size: 55px;
+    font-weight: 200;
+}
+.overpay p {
+    font-size: 16px;
+    margin: 30px 0 20px;
+    color: #c4c4c4;
+    text-align: center;
+}
+
+/*  Section 5  */
+.vote {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    background-color: black;
+}
+.vote .content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 150px 100px;
+}
+.vote .icon img {
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 350px;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+.vote h2 {
+    color: whitesmoke;
+    font-size: 55px;
+    font-weight: 200;
+}
+.vote p {
+    font-size: 16px;
+    margin: 30px 0 20px;
+    color: #c4c4c4;
+    text-align: center;
+}
+
+/*  Section 6  */
+.questions { 
+    margin-top: 80px;
+    margin-bottom: 80px;
+    align-items: center;
+    text-align: center;
+}
+.questions h2 {
+    color: whitesmoke;
+    font-size: 55px;
+    font-weight: 200;
+}
+.questions p {
+    font-size: 16px;
+    margin: 30px 0 20px;
+    color: #c4c4c4;
+    text-align: center;
+}
+.qcontent {
+    color: black;
+    position: relative;
+}
+.qicon img {
+    width: 120px;
+    position: relative;
+
+}
+
+
+/*  footer  */
+footer {
+    display: flex;
+    position: relative;
+    background-color: black;
+    margin-bottom: 0px;
+}
+footer .col {
+    text-align: center;
+    align-items: center;
+    margin: 15px 15px;
+    width: 30%;
+}
+footer p {
+    font-size: 16px;
+    margin: 30px 0 20px;
+    color: #c4c4c4;
+    text-align: center;
+}
+footer ul {
+    font-size: 16px;
+    margin: 30px 0 20px;
+    color: #c4c4c4;
+    text-align: center;
+}
+
+
+
+/*social links*/
+.social-links img{
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+}
+.social-links {
+    text-align: center;
+}
+
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: #7e86e0;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li {
+        background: #7e86e0;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        background: #7e86e0;
+        color: whitesmoke;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-bottom: 10px;
+        /*height: 100vh;*/
+    }
+    .row {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2 .nvexa_banner {
+        width: 100%;
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-1 {
+        flex-basis: 100%;
+    }
+    .col-1 h2 {
+        font-size: 40px;
+    }
+    .col-1 h3 {
+        font-size: 16px;
+    }
+    .col-1 p{
+        font-size: 14px;
+    }
+
+    /*  section1  */
+    .nvexaUse .topRow{
+        flex-direction: column;
+    }
+    .nvexaUse .bottomRow {
+        flex-direction: column;
+    }
+    .nvexaUse {
+        width: 100%;
+    }
+    .nvexaUse .title {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .bottomRow .cola {
+        align-items: center;
+        width: 100%;
+    }
+
+
+    /*  section2  */
+    .bannerSection h1 {
+        font-size: 35px;
+    }
+    .bannerSection p {
+        font-size: 14px;
+        font-weight: 200;
+        text-shadow: 2px 2px 5px black;
+        width: 100%;
+    }
+
+}
+
+/*.col-icon:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}*/
+
+
+
+
+
+
